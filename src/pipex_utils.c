@@ -6,7 +6,7 @@
 /*   By: lbraga <lbraga@student.42lisboa.com>>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 20:09:33 by lbraga            #+#    #+#             */
-/*   Updated: 2025/11/25 23:57:04 by lbraga           ###   ########.fr       */
+/*   Updated: 2025/11/26 10:08:49 by lbraga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	check_args(int ac, char **av, char **env)
 {
 	if (ac != 5)
 		exit_error(NULL, "argc", 1);
-	if (!av[2][0] || !av[3][0])
+	if (!av[2] || !av[3] || !av[2][0] || !av[3][0])
 		exit_error(NULL, "empty", 2);
 	if (!ft_getenv("PATH", env))
 		exit_error(NULL, "env", 3);
@@ -58,7 +58,7 @@ void	execute_command(char *av, char **env)
 	char	*path;
 	char	**paths;
 
-	cmd = ft_split(av, ' ');
+	cmd = ft_splitspace(av);
 	path = ft_getenv("PATH", env);
 	paths = ft_split(path, ':');
 	if (!paths)
