@@ -6,7 +6,7 @@
 #    By: lbraga <lbraga@student.42lisboa.com>>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/23 16:04:42 by lbraga            #+#    #+#              #
-#    Updated: 2025/11/24 20:11:13 by lbraga           ###   ########.fr        #
+#    Updated: 2025/11/26 09:48:07 by lbraga           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,9 @@ SRC		=	src/ft_atoi.c		src/ft_bzero.c		src/ft_calloc.c		src/ft_isalnum.c \
 			src/ft_strmapi.c	src/ft_striteri.c	src/ft_putchar_fd.c	src/ft_putstr_fd.c \
 			src/ft_putendl_fd.c	src/ft_putnbr_fd.c \
 			src/ft_printf.c		src/ft_pformat.c \
-			src/ft_isspace.c	src/ft_atol.c		src/ft_atol_intoverflow.c \
-			src/ft_getenv.c		src/ft_freecharray.c	src/ft_strjoinfree.c 
+			src/ft_isspace.c	src/ft_atol.c			src/ft_atol_intoverflow.c \
+			src/ft_getenv.c		src/ft_freecharray.c	src/ft_strjoinfree.c \
+			src/ft_splitspace.c
 
 OBJ		=	$(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: lbraga <lbraga@student.42lisboa.com>>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 12:47:31 by lbraga            #+#    #+#             */
-/*   Updated: 2025/11/24 20:11:01 by lbraga           ###   ########.fr       */
+/*   Updated: 2025/11/26 09:44:54 by lbraga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,6 @@ long	ft_atol_intoverflow(const char *nptr);
 char	*ft_getenv(const char *var, char **env);
 void	ft_freecharray(char **array);
 char	*ft_strjoinfree(char **s1, char const *s2);
+char	**ft_splitspace(char const *s);
 
 #endif
